@@ -40,4 +40,6 @@ public class ValidParentheses_LC_20 {
         // If stack becomes empty, return true since all the parentheses were balanced.
         return stack.isEmpty();
     }
+
+
 }

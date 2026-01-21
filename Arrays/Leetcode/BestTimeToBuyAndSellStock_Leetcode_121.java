@@ -41,4 +41,6 @@ public class BestTimeToBuyAndSellStock_Leetcode_121 {
         }
         return maxProfit;
     }
+
+    // For Optimal approach refer TwoPointer folder
 }
