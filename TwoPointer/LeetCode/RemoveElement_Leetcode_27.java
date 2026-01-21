@@ -10,7 +10,7 @@ public class RemoveElement_Leetcode_27 {
         System.out.println(removeDuplicates(nums));
     }
 
-    public static int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {
       int k=0;
         Arrays.sort(nums);
         for(int i=1;i<=nums.length-1;i++){
