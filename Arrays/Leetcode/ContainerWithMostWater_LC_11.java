@@ -1,4 +1,4 @@
-package dsa_learning.Arrays.Leetcode;
+package dsa_learning.arrays.Leetcode;
 
 public class ContainerWithMostWater_LC_11 {
 

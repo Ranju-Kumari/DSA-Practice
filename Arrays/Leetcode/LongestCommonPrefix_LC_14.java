@@ -1,4 +1,4 @@
-package dsa_learning.Arrays.Leetcode;
+package dsa_learning.arrays.Leetcode;
 
 import java.util.Arrays;
 

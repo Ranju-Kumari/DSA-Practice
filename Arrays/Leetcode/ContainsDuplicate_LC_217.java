@@ -1,4 +1,8 @@
-class Solution {
+package dsa_learning.arrays.Leetcode;
+
+import java.util.HashMap;
+
+class ContainsDuplicate_LC_217 {
     public boolean containsDuplicate(int[] nums) {
     //O(n^2) 
     //     for(int i=0;i<=nums.length-1;i++){
