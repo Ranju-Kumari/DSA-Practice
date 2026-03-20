@@ -6,11 +6,9 @@ public class MaximumSubarray_LC_53 {
 
     public static void main(String [] args){
         int [] a = {-2,1,-3,4,-1,2,1,-5,4};
-        System.out.println("Maximum sum is "+ maxSum_BigOofNsquareSoln(a));
-//        System.out.println("Maximum sum is "+ maxSum_KadanesAlgo(a));
-
+        System.out.println("Maximum sum is "+ maxSum_KadanesAlgo(a));
+        // System.out.println("Maximum sum is "+ maxSum_BigOofNsquareSoln(a));
     }
-
 
 //Approach:
     //This uses Kadane’s Algorithm.
@@ -39,7 +37,6 @@ public class MaximumSubarray_LC_53 {
     }
 
 
-
 //Brute force approach : O(n^2)
 //Approach:
     //This checks all possible subarrays.
@@ -61,11 +58,5 @@ public class MaximumSubarray_LC_53 {
             }
         }
         return maxSum;
-    }
-
-
-
-
-    
-
+    }   
 }
