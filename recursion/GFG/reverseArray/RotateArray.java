@@ -1,10 +1,10 @@
-package arrays.Leetcode;
+package recursion.GFG.reverseArray;
 
-public class RotateArray_LC_189 {
+public class RotateArray {
 
     public static void main(String [] args){
 
-        int nums[] =  {1,2,3,4,5,6,7};
+        int nums [] =  {1,2,3,4,5,6,7};
         int k =3;
         k = k % nums.length;//This is to handle cases when k is larger then array length
         reverseArray(nums,0,nums.length-1);
