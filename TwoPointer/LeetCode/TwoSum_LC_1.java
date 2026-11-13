@@ -27,7 +27,6 @@ public class TwoSum_LC_1 {
                 twoSum[1]=i;
             }
             mp.put(nums[i],i);
-
         }
         return twoSum;
     }
@@ -35,27 +34,22 @@ public class TwoSum_LC_1 {
 
 
     // Better approach: O(n*logn)   ----> If the given array is sorted
-    public static int [] twoSum(int [] nums, int target){
+    public static int[] twoSum(int[] nums, int target) {
+        int minValIndex = 0;
+        int maxValIndex = nums.length - 1;
 
-        int minValIndex =0;
-        int maxValIndex = nums.length-1;
-        int arrLength = nums.length;
-        int [] twoSumIndices = new int[2];
-
-        while(arrLength-->0){
-            if(nums[minValIndex]+nums[maxValIndex]==target){
-                twoSumIndices[0]=minValIndex;
-                twoSumIndices[1]=maxValIndex;
-
-            } else if (nums[minValIndex]+nums[maxValIndex]>target) {
+        while (minValIndex < maxValIndex) {
+            int sum = nums[minValIndex] + nums[maxValIndex];
+            if (sum == target) {
+                return new int[]{minValIndex, maxValIndex};
+            } else if (sum > target) {
                 maxValIndex--;
-            }else {
+            } else {
                 minValIndex++;
             }
         }
-        return twoSumIndices;
+        return new int[]{-1, -1};   // no pair found
     }
-
     //Brute force approach : O(n*n)
     public static int [] twoSum_BruteForce(int [] nums, int target){
 

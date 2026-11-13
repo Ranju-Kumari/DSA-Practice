@@ -1,7 +1,8 @@
-package strings.leeCode;
+package dsa_learning.strings.leeCode;
 
 public class ReverseString_LC_344 {
     public void reverseString(char[] s) {
+
 
         // Swapping the characters at positions i and s.length-1-i in each iterations
         // till we reach the middle index of the character array
